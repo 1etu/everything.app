@@ -1,4 +1,7 @@
 # everything.app
+NOTE: The project is deprecated and will no longer be updated. Deleted roughly like over 50 built-in tools since I don't want people to make profit off of this project. You can create your own tools.
+
+
 The Everything.app project is a modular utility collection built with Next.js and TypeScript, designed to provide a flexible and extensible platform for various tools and utilities.
 
 Each tool in the application is completely self-contained and follows a specific module structure. To create a new tool, you'll need to understand how the modular system works.
