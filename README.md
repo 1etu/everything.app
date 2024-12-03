@@ -50,7 +50,8 @@ export default function YourTool({ onBack }: ToolComponentProps) {
 The system automatically discovers and registers new tools through the registry system. When the application starts, it scans the tools directory, loads the metadata, and makes the tools available through the search interface. Tools can use any React hooks or components, and have access to the shared components in the components directory. The ToolLayout component provides consistent navigation and styling across all tools. To test your new tool during development, run the development server with ```'npm run dev'``` and your tool will be automatically available through the search interface. The search system indexes your tool based on its name, description, and tags from the metadata file.
 
 <img width="1920" alt="Screenshot 2024-12-03 at 20 23 48" src="https://github.com/user-attachments/assets/84ef3149-807d-49f9-90dc-6bdd23a933db">
-<img width="1920" alt="Screenshot 2024-12-03 at 20 33 57" src="https://github.com/user-attachments/assets/3108d578-bbea-4743-a99a-69874969e1de">
 <img width="1920" alt="Screenshot 2024-12-03 at 20 24 04" src="https://github.com/user-attachments/assets/dce127e1-f0dc-4011-b152-603c74c07e09">
+<img width="1920" alt="Screenshot 2024-12-03 at 20 33 57" src="https://github.com/user-attachments/assets/3108d578-bbea-4743-a99a-69874969e1de">
+
 
 
