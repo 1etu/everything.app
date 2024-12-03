@@ -1,2 +1,47 @@
 # everything.app
 The Everything.app project is a modular utility collection built with Next.js and TypeScript, designed to provide a flexible and extensible platform for various tools and utilities.
+
+Each tool in the application is completely self-contained and follows a specific module structure. To create a new tool, you'll need to understand how the modular system works.
+The core of the module system lives in the tools directory. Here's how to create a new tool:
+
+First, create a new directory under src/tools with your tool name. Each tool requires two main components:
+```
+src/tools/your-tool/
+  ├── metadata.json
+  └── src/
+      └── index.tsx
+```
+
+The ```metadata.json``` file defines your tool's properties:
+```
+{
+  "id": "your-tool",
+  "name": "Your Tool",
+  "description": "What your tool does",
+  "tags": ["category1", "category2"],
+  "icon": "IconNameFromLucide"
+}
+```
+
+Your main tool component goes in index.tsx and should follow this basic structure:
+```
+'use client';
+
+import { useState } from 'react';
+import ToolLayout from '@/components/ToolLayout';
+import { ToolComponentProps } from '@/tools/types';
+
+export default function YourTool({ onBack }: ToolComponentProps) {
+  // Your tool implementation
+  return (
+    <ToolLayout 
+      title="Your Tool"
+      onBack={onBack}
+    >
+      {/* Your tool UI */}
+    </ToolLayout>
+  );
+}
+```
+
+The system automatically discovers and registers new tools through the registry system. When the application starts, it scans the tools directory, loads the metadata, and makes the tools available through the search interface. Tools can use any React hooks or components, and have access to the shared components in the components directory. The ToolLayout component provides consistent navigation and styling across all tools. To test your new tool during development, run the development server with ```'npm run dev'``` and your tool will be automatically available through the search interface. The search system indexes your tool based on its name, description, and tags from the metadata file.
