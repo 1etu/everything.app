@@ -1,0 +1,7 @@
+{
+  "id": "sha256",
+  "name": "SHA256 Hash Generator",
+  "description": "Generate SHA256 hashes from text input",
+  "tags": ["hash", "crypto", "sha256", "security"],
+  "icon": "Lock"
+} 

@@ -1,0 +1,7 @@
+{
+  "id": "uuid-generator",
+  "name": "UUID Generator",
+  "description": "Generate random UUIDs (v4)",
+  "tags": ["uuid", "generator", "random", "identifier"],
+  "icon": "Hash"
+} 

@@ -1,0 +1,7 @@
+{
+  "id": "base64-encoder",
+  "name": "Base64 Encoder",
+  "description": "Convert text to Base64 encoded format",
+  "tags": ["encoding", "base64", "converter", "text"],
+  "icon": "ArrowUpToLine"
+} 
